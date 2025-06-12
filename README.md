@@ -31,3 +31,4 @@ The Node-RED flow is very simple and tailored to my boat’s configuration. Howe
 **Enjoy!**
 
 ![20250424_224849](https://github.com/user-attachments/assets/97a7e817-3c49-479f-a38a-c65ad2ae0ea4)
+<img width="824" alt="Cattura" src="https://github.com/user-attachments/assets/a47abd8d-2923-4c8f-921d-e5b0164b1166" />
