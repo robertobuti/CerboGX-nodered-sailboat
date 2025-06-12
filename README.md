@@ -1,16 +1,37 @@
-# CerboGX-nodered-sailboat
-User interface for nodered on sailboat with Victron CerboGX
-I have realized this simple UI using large image with node-red on CerboGX, my sailboat use Victron system, this project can easy adapted on your requirements.
-Interface use : Raspberry with WiFi (in my case PiB+ it's enought) with wifi connection, but if your prefere also wired Ethernet can be used as well.
-Display it's classic Pi 5" MipiDSI IPS with touch screen, like this one : https://www.amazon.it/Ingcool-Raspberry-Touchscreen-Capacitivo-Supporta/dp/B0B4W7TB9J/ref=sr_1_4_pp?dib=eyJ2IjoiMSJ9.p8W85TfMX3fecv2KTSoro-e1RTQWaWp3jMnG3YekElsJRgfGS-GjaA5TIBXWfiyEThWuTuPV9uzgMDlOyJbKBrRKmFr_Ch7EbwX3y2l7FErkFVSPXXNmH-lGdkcKmVii.5lLGI_H4KVJDFnyesT8jvCgABeWj9iJJltSsIgOlabw&dib_tag=se&keywords=Ingcool&qid=1749720719&sr=8-4&th=1
-Glass is very thin, touch have some working problem when glued to the panel, so a palstic chassis 3D printed has been added, on that i apply also a switch to power-on /off the unit.
-Note, PI work at 5V only, so a dc/Dc converter need to  be used from 12V to 5V, any one you have / find can be used.
+Sure! Here's your revised and polished text in English for better readability:
 
-steps : install raspi on your PI, you will need to install :
-Install chromium (browser), x11 server utils and unclutter (hide the cursor from the screen)
-You find many guide on google to make this, then add on autostart the batch kiosk.sh , here i have used mDNS name to call Nodered ui, but depend from your local lan, if direct connection without router you will  need to set fixed ip on CerboGX and change "venus.local" on batch file with CerboGX Ip.
-I have used portrait layout for display, but this it's again a yoru choise.
+---
 
-Nodered project is very simple, obviously is for my boat configuration, it's easy to adapt on your system.
-Enjoy.
+**User Interface for Node-RED on a Sailboat with Victron CerboGX**
+
+I created this simple user interface using a large background image and Node-RED running on a CerboGX. My sailboat uses a Victron energy system, but this project can be easily adapted to your specific needs.
+
+**Components Used:**
+
+* **Raspberry Pi with WiFi**: I used a Pi B+, which is more than enough. If you prefer, you can also use a wired Ethernet connection.
+* **Display**: A standard 5" MIPI DSI IPS touchscreen display, easily found on Amazon.
+* **Display Mount**: The touchscreen glass is very thin and may have responsiveness issues when glued directly to a panel. To solve this, I designed a 3D-printed plastic chassis. I also added a power switch to this mount for turning the unit on and off.
+* **Power Supply**: The Raspberry Pi operates at 5V, so you’ll need a DC/DC converter to step down from 12V to 5V. Any model you have or can find will work fine.
+
+**Setup Steps:**
+
+1. Install Raspberry Pi OS on your Pi.
+2. Install the following software packages:
+
+   * Chromium browser
+   * X11 server utilities
+   * Unclutter (to hide the mouse cursor)
+3. You can find many guides online for setting this up.
+4. Add your `kiosk.sh` script to the autostart configuration.
+5. In the script, I used the mDNS name `venus.local` to reach the Node-RED UI, but this depends on your network setup.
+
+   * If you're using a direct connection without a router, you’ll need to set a static IP on the CerboGX and replace `venus.local` in your script with that IP address.
+6. I’ve set the display to portrait mode, but you can choose the orientation that best fits your layout.
+
+**About the Node-RED Project:**
+
+The Node-RED flow is very simple and tailored to my boat’s configuration. However, it can be easily modified to suit your own setup.
+
+**Enjoy!**
+
 ![20250424_224849](https://github.com/user-attachments/assets/97a7e817-3c49-479f-a38a-c65ad2ae0ea4)
