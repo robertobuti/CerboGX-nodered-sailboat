@@ -1,7 +1,3 @@
-Sure! Here's your revised and polished text in English for better readability:
-
----
-
 **User Interface for Node-RED on a Sailboat with Victron CerboGX**
 
 I created this simple user interface using a large background image and Node-RED running on a CerboGX. My sailboat uses a Victron energy system, but this project can be easily adapted to your specific needs.
